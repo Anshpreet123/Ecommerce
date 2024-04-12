@@ -8,7 +8,11 @@ const path = require("path");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {origin: ["https://ecommerce-ochre-mu.vercel.app/"] || '*',
+  methods: ["POST", "GET"],
+credentials: true,}
+));
 
 // Database Connection With MongoDB
 mongoose.connect("mongodb://localhost:27017/e-commerce");

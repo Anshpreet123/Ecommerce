@@ -74,6 +74,9 @@ bower_components
 build/Release
 
 # Dependency directories
+./e-commerce-frontend/node_modules
+./e-commerce-backend/node_modules
+./e-commerce-admin/node_modules
 node_modules/
 jspm_packages/
 
