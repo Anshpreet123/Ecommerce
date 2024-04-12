@@ -9,7 +9,7 @@ const cors = require("cors");
 
 app.use(express.json());
 app.use(cors(
-  {origin: ["https://ecommerce-ochre-mu.vercel.app/"] || '*',
+  {origin: ["https://ecommerce-ochre-mu.vercel.app/"],
   methods: ["POST", "GET"],
 credentials: true,}
 ));
